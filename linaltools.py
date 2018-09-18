@@ -18,3 +18,8 @@ class Vector:
 
     def __eq__(self, v):
         return self.coordinates == v.coordinates
+
+
+# Sum a list of vectors
+def sum(self, vectors):
+    return [sum(x) for x in zip(*vectors)]
