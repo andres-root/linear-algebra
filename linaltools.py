@@ -30,3 +30,9 @@ class Vector:
     def times_scalar(self, c):
         new_coordinates = [c * x for x in self.coordinates]
         return Vector(new_coordinates)
+
+if __name__ == '__main__':
+    v = Vector((8.218, -9.341))
+    v2 = Vector((-1.129, 2.111))
+    r = v.plus(v2)
+    print(r)
